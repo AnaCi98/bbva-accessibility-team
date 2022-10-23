@@ -47,7 +47,7 @@
             <span class="No-son-vlidos-la-Cdula-de-Extranjera-Tarjeta-de-Identidad-ni-el-pasaporte">
                 No son válidos la Cédula de Extranjería, Tarjeta de Identidad ni el pasaporte.
               </span>
-            <input class="Rectangle-2" placeholder="Fecha de expedición del documento">
+            <input class="Rectangle-2" placeholder="Fecha de expedición de Cédula">
             <span class="Ingresa-en-este-orden-ddmmaaaa-2">
               Ingresa en este orden dd/mm/aaaa
             </span>

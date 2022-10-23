@@ -44,7 +44,7 @@ section{
   }
 
   .Rectangle-2 {
-    width: 250px;
+    width: 280px;
     height: 20px;
     padding: 18px 30px 28px 16px;
     background-color: #f4f4f4;
@@ -67,7 +67,7 @@ section{
 
   form{
     display: grid;
-    grid-template-columns: 320px 320px;
+    grid-template-columns: 350px 350px;
     grid-template-rows: 125px 125px 125px 80px 200px 80px;
     margin-left: 80px;
     height: 100%;
