@@ -60,15 +60,7 @@ include_once 'conexion.php';
                  </span>
             </div>
             <input type="submit" name="mandar" class="Rectangle-3" value="Conoce oferta">
-          </form>
-           <input type="checkbox" class="checkbox-button">
-          <span class="Autorizo-el-tratamiento-de-mis-Datos-confitme-que-la-politica-de-Tratamiento-de-Datos-Personales-de">
-            Autorizo el tratamiento de mis Datos, confitme que la politica de Tratamiento de Datos Personales de BBVA Colombia
-          </span>
-          <span class="Ver-autorizacion-y-tratamiento-de-Datos-Personales">
-            Ver autorizacion y tratamiento de Datos Personales
-          </span>
-          <?php 
+            <?php 
                     
                     if (isset($_POST['mandar'])) {
                         if (strlen($_POST['nombre'])>=1 && strlen($_POST['apellido'])>=1 && strlen($_POST['sexo'])>=1 
@@ -81,14 +73,24 @@ include_once 'conexion.php';
                             $exped=trim($_POST['exped']);
                             $cel=trim($_POST['cel']);
                             $correo=trim($_POST['correo']);
-                            $sqls= "INSERT INTO Usuario (id_ced,nombre,apellidos,fecha_nac,fecha_exp_ced,celular,correo,sexo)
-                             VALUES ($id, '$nombre','$apellido',$nac, $exped, $cel, $correo, $sexo)";
+                            $sqls= "INSERT INTO Usuario (id_ced,nombre,apellidos,fecha_nac,fecha_exp_ced,cel,correo,sexo)
+                             VALUES ($id, '$nombre','$apellido',$nac, $exped, '$cel', '$correo', '$sexo')";
                             $sentencia = $mbd->prepare($sqls);
                             $sentencia->execute();
+                            echo 'se armo';
                             header('Location:index.php?pagina=1');
                         }
                     }
                     ?>
+          </form>
+           <input type="checkbox" class="checkbox-button">
+          <span class="Autorizo-el-tratamiento-de-mis-Datos-confitme-que-la-politica-de-Tratamiento-de-Datos-Personales-de">
+            Autorizo el tratamiento de mis Datos, confitme que la politica de Tratamiento de Datos Personales de BBVA Colombia
+          </span>
+          <span class="Ver-autorizacion-y-tratamiento-de-Datos-Personales">
+            Ver autorizacion y tratamiento de Datos Personales
+          </span>
+        
     </section>
     
 </body>
