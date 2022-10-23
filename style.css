@@ -15,14 +15,13 @@ section{
   }
 
   .Descubre-la-tarjeta-que-tenemos-para-ti {
-    width: 598px;
+    width: 508px;
     height: 116px;
     margin: 58px 154px 8px 74px;
     font-family: Inter;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 38px;
+    font-weight:bolder;
     font-stretch: normal;
-    font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
@@ -32,7 +31,157 @@ section{
   .Con-unos-datos-bsicos-crearemos-una-tarjeta-de-crdito-que-se-ajuste-a-tu-perfil-Una-vez-conozcas {
     width: 620px;
     height: 46px;
-    margin: 8px 132px 43px 74px;
+    margin: 0 132px 43px 74px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.67);
+  }
+
+  .Rectangle-2 {
+    width: 280px;
+    height: 20px;
+    padding: 18px 30px 28px 16px;
+    background-color: #f4f4f4;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom:1px solid #000000;
+    font-size: 18px;
+    
+  }
+
+  .Rectangle-3 {
+    width: 120px;
+    height: 44px;
+    padding: 14px 16.6px 14px 14.4px;
+    background-color: rgba(229, 229, 229, 0.78);
+    position: absolute;
+    top: 990px;
+  }
+
+  form{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 125px 125px 125px 80px 200px 80px;
+    margin-left: 80px;
+    height: 100%;
+
+  }
+
+  img.Logo {
+    width: 80px;
+    height: 28px;
+    margin: 15px 1023px 7px 50px;
+    object-fit: contain;
+  }
+
+  .Solicita-tu-tarjeta {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 200px;
+    height: 20px;
+    font-family: Inter;
+    font-size: 18x;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.91);
+  }
+
+  select{
+    border: none;
+    color: rgb(128, 128, 128);
+    background-color: transparent;
+    font-size: 18px;
+    width: 260px;
+    height: max-content;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  option{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    height: 50px;
+    border-color: rgba(229, 229, 229, 0.78) transparent transparent transparent;
+  }
+
+  select::after{
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  .Ingresa-en-este-orden-ddmmaaaa {
+    width: 202px;
+    height: 19px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.67);
+    position: absolute;
+    left: 480px;
+    top: 540px;
+  }
+
+  .No-son-vlidos-la-Cdula-de-Extranjera-Tarjeta-de-Identidad-ni-el-pasaporte {
+    width: 250px;
+    height: 38px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.67);
+    position: absolute;
+    left: 130px;
+    top: 670px;
+  }
+
+  img.credit-card-1 {
+    width: 459px;
+    margin: 128px 67px 22px 780px;
+    object-fit: contain;
+    position: absolute;
+  }
+
+  .Conoce-tu-oferta-en-un-minuto-facil-y-sin-papeles {
+    width: 450px;
+    height: 162px;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    position: absolute;
+    left: 780px;
+    top: 550px;
+
+  }
+
+  .Este-sitio-web-est-protegido-por-reCAPTCHA-y-se-aplican-la-Poltica-de-Privacidad-y-los-Trminos-de {
+    height: 38px;
     font-family: Inter;
     font-size: 16px;
     font-weight: normal;
@@ -43,24 +192,73 @@ section{
     text-align: left;
     color: rgba(0, 0, 0, 0.67);
   }
-
-  .Rectangle-2 {
-    width: 104px;
-    height: 65px;
-    flex-grow: 0;
-    padding: 18px 225px 28px 16px;
-    background-color: #f4f4f4;
+  .Este-sitio-web-est-protegido-por-reCAPTCHA-y-se-aplican-la-Poltica-de-Privacidad-y-los-Trminos-de .text-style-1 {
+    font-weight: 600;
+    color: #00498b;
   }
 
-  .Rectangle-3 {
-    width: 120px;
-    height: 44px;
-    margin: 47px 158px 0 74px;
-    padding: 14px 16.6px 14px 14.4px;
-    background-color: rgba(229, 229, 229, 0.78);
+  .captcha{
+    width: 500px;
+    margin-top: 30px;
   }
 
-  form{
-    margin-left: 80px;
+.Ingresa-en-este-orden-ddmmaaaa-2{
+  width: 202px;
+  height: 19px;
+  position: absolute;
+  left: 480px;
+  top: 670px;
+    font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.67);
+}
 
-  }
+.checkbox-button{
+  width: 32px;
+  height: 32px;
+  border: solid 1px #000;
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 880px;
+  left: 74px;
+}
+
+.Autorizo-el-tratamiento-de-mis-Datos-confitme-que-la-politica-de-Tratamiento-de-Datos-Personales-de {
+  width: 508px;
+  height: 38px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.67);
+  position: absolute;
+  top: 880px;
+  left: 124px;
+}
+
+.Ver-autorizacion-y-tratamiento-de-Datos-Personales {
+  width: 508px;
+  height: 19px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00498b;
+  position: absolute;
+  top: 940px;
+  left: 124px;
+}
