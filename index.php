@@ -1,3 +1,6 @@
+<?php
+include_once 'conf.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,15 +20,37 @@
             Con unos datos básicos crearemos una tarjeta de crédito que se ajuste a tu perfil. Una vez conozcas la tarjeta, tú decides si continúas con la solicitud.
           </span>
           <form>
-            <input class="Rectangle-2" placeholder="Nombre">
-            <input class="Rectangle-2" placeholder="Apellido">
-            <input class="Rectangle-2" placeholder="Sexo">
-            <input class="Rectangle-2" placeholder="Fecha de nacimiento">
-            <input class="Rectangle-2" placeholder="Número de ciudadanía">
-            <input class="Rectangle-2" placeholder="Fecha de expedición del documento">
-            <input type="button" class="Rectangle-3" value="Conoce oferta">
+            <input class="Rectangle-2" name=nombre placeholder="Nombre">
+            <input class="Rectangle-2" name=apellido placeholder="Apellido">
+            <input class="Rectangle-2" name=sexo placeholder="Sexo">
+            <input class="Rectangle-2" name=nac placeholder="Fecha de nacimiento aaaa/mm/dd">
+            <input class="Rectangle-2" name=id placeholder="Número de ciudadanía">
+            <input class="Rectangle-2" name=exped placeholder="Fecha de expedición del documento">
+            <input class="Rectangle-2" name=cel placeholder="numero de cel">
+            <input class="Rectangle-2" name=correo placeholder="Introduce tu correro">
+            <input type="submit" name="mandar" class="Rectangle-3" value="Conoce oferta">
           </form>
-          
+          <?php 
+                    
+                    if (isset($_POST['mandar'])) {
+                        if (strlen($_POST['nombre'])>=1 && strlen($_POST['apellido'])>=1 && strlen($_POST['sexo'])>=1 
+                        && strlen($_POST['nac'])>=1 && strlen($_POST['id'])>=1 && strlen($_POST['exped'])>=1 && strlen($_POST['cel'])>=1 && strlen($_POST['correo'])>=1) {
+                            $nombre=trim($_POST['nombre']);
+                            $apellido=trim($_POST['apellido']);
+                            $sexo=trim($_POST['sexo']);
+                            $nac=trim($_POST['nac']);
+                            $id=trim($_POST['id']);
+                            $exped=trim($_POST['exped']);
+                            $cel=trim($_POST['cel']);
+                            $correo=trim($_POST['correo']);
+                            $sqls= "INSERT INTO Usuario (id_ced,nombre,apellidos,fecha_nac,fecha_exp_ced,celular,correo,sexo)
+                             VALUES ($id, '$nombre','$apellido',$nac, $exped, $cel, $correo, $sexo)";
+                            $sentencia = $mbd->prepare($sqls);
+                            $sentencia->execute();
+                            header('Location:index.php?pagina=1');
+                        }
+                    }
+                    ?>
 
     </section>
     
