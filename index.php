@@ -1,5 +1,5 @@
 <?php
-include_once 'conf.php';
+include_once 'conexion.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,15 +19,15 @@ include_once 'conf.php';
           <span class="Con-unos-datos-bsicos-crearemos-una-tarjeta-de-crdito-que-se-ajuste-a-tu-perfil-Una-vez-conozcas">
             Con unos datos básicos crearemos una tarjeta de crédito que se ajuste a tu perfil. Una vez conozcas la tarjeta, tú decides si continúas con la solicitud.
           </span>
-          <form>
-            <input class="Rectangle-2" name=nombre placeholder="Nombre">
-            <input class="Rectangle-2" name=apellido placeholder="Apellido">
-            <input class="Rectangle-2" name=sexo placeholder="Sexo">
-            <input class="Rectangle-2" name=nac placeholder="Fecha de nacimiento aaaa/mm/dd">
-            <input class="Rectangle-2" name=id placeholder="Número de ciudadanía">
-            <input class="Rectangle-2" name=exped placeholder="Fecha de expedición del documento">
-            <input class="Rectangle-2" name=cel placeholder="numero de cel">
-            <input class="Rectangle-2" name=correo placeholder="Introduce tu correro">
+          <form action="" method="POST">
+            <input type="text" class="Rectangle-2" name=nombre placeholder="Nombre">
+            <input type="text" class="Rectangle-2" name=apellido placeholder="Apellido">
+            <input type="text" class="Rectangle-2" name=sexo placeholder="Sexo">
+            <input type="text" class="Rectangle-2" name=nac placeholder="Fecha de nacimiento aaaa/mm/dd">
+            <input type="text" class="Rectangle-2" name=id placeholder="Número de ciudadanía">
+            <input type="text" class="Rectangle-2" name=exped placeholder="Fecha de expedición del documento">
+            <input type="text" class="Rectangle-2" name=cel placeholder="numero de cel">
+            <input type="text" class="Rectangle-2" name=correo placeholder="Introduce tu correro">
             <input type="submit" name="mandar" class="Rectangle-3" value="Conoce oferta">
           </form>
           <?php 
