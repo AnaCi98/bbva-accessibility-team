@@ -12,11 +12,20 @@ include_once 'conexion.php';
     <title>BBVA Colombia</title>
 </head>
 <body>
-  <div class="popup-oferta">
+  <div id=pop class="popup-oferta">
     ¡Felicidades! Hemos realizado el analisis y tienes disponible una linea de crédito 
     <p>por 30.000.000 </p>
     <button class="tramitar-button">Quiero tramitarla</button>
-    <span class="tache">x</span>
+    <span class="tache" onclick="pera()">x</span>
+    <script>
+    var div= document.getElementById('pop');
+function nuez(){
+div.classList.replace("popup-oferta", "popup-ofertaC");
+}
+    function pera(){
+      div.remove();
+    }
+    </script>
   </div>
   <div class="Rectangle-1" onclick="myFunction()">
             <img src="./images/Logo.png" class="Logo">
@@ -67,7 +76,10 @@ include_once 'conexion.php';
                     de Google.
                  </span>
             </div>
-            <input type="submit" name="mandar" class="Rectangle-3" value="Conoce oferta">
+            <input type="submit" name="mandar" class="Rectangle-3" onclick="nuez()" value="Conoce oferta" >
+
+           
+
             <?php 
                     
                     if (isset($_POST['mandar'])) {

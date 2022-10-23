@@ -267,12 +267,15 @@ img.chatbot {
   width: 80px;
   height: 58px;
   position: fixed;
-  left: 1110px;
-  top: 480px;
+  left: 1210px;
+  top: 520px;
   z-index: 12123;
 }
 
 .popup-oferta {
+display: none;
+}
+.popup-ofertaC{
   width: 600px;
   height: 300px;
   background-color: #eee;
@@ -287,8 +290,9 @@ img.chatbot {
   z-index: 21312;
   border: 1px solid #4b4b4bc3;
   font-family: Inter;
-
+display: block;
 }
+
 .popup-oferta span {
   position: absolute;
   top: -16px;
